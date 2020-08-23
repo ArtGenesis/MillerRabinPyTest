@@ -16,7 +16,7 @@ def milrab(p):
         k = k-1
     return False
 
-def is_prime(p, r=1000, c=0):
+def is_prime(p, r=40, c=0):
     for i in range(r):
         if milrab(p) == True: c += 1
     if c == r: return True
