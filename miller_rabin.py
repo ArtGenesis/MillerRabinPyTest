@@ -1,6 +1,7 @@
 from random import randint
 
 def milrab(p):
+    if p == 1: return False
     if p == 2: return True
     if p % 2 == 0: return False
     m, k = p-1, 0
