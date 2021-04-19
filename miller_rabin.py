@@ -17,8 +17,11 @@ def milrab(p):
         k = k - 1
     return False
 
-def is_prime(p, r = 40, c = 0):
+def is_prime(p, r=10, c=0):
+    if p == 1:
+        return False
     for i in range(r):
-        if milrab(p): c += 1
+        if milrab(p) == True: c += 1
+        else: return False
     if c == r: return True
     else: return False
