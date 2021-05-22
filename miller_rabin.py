@@ -19,6 +19,6 @@ def milrab(p):
 
 def is_prime(p, r=10):
     for i in range(r):
-        if milrab(p) != True:
+        if not milrab(p):
             return False
     return True
